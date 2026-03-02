@@ -10,7 +10,7 @@ export default function Hero() {
         <img
           src={img2}
           alt="background"
-          className="w-full h-full object-cover opacity-70"
+          className="w-full h-full object-cover opacity-90"
         />
 
         {/* Lighter Gradient Overlay */}
