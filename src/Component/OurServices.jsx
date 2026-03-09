@@ -2,12 +2,12 @@ import React from "react";
 
 export default function OurServices() {
   return (
-    <section className="bg-[#eef1f7] py-15overflow-hidden">
+    <section className="bg-[#EEF2FF] py-15overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
         
         {/* LEFT SIDE */}
-        <div className="pl-5">
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-800">
+        <div className="pl-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Our Services
           </h2>
 

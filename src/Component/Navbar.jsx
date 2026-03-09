@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "../assets/zensoft logo.png"
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className=" navbar  max-w-7xl mx-auto px-4 absolute z-50 ">
+    <div className=" navbar  max-w-7xl mx-auto px-4 shadow-2xl mt-2 absolute z-50 ">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,20 +46,20 @@ const Navbar = () => {
         </div>
        <img src={logo} alt="Zensoft Logo" className="h-[60px] w-[100px]" />
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-white font-bold">
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>Service</a>
-          </li>
-          <li>
-            <a>Portfolio</a>
-          </li>
-          <li>
-            <a>About Us</a>
-          </li>
+      <div className="navbar-center  gap-3 hidden lg:flex">
+        <ul className="menu text-white  gap-5 menu-horizontal px-1  font-bold">
+          <NavLink to="/">
+            Home
+          </NavLink>
+          <NavLink to="/service">
+            Service
+          </NavLink>
+          <NavLink to="/portfolio">
+            Portfolio
+          </NavLink>
+          <NavLink to="/about">
+            About Us 
+          </NavLink>
         </ul>
       </div>
       <div className="navbar-end">

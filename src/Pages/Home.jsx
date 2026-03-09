@@ -3,6 +3,10 @@ import Hero from '../Component/Hero';
 import Record from '../Component/Record';
 import OurServices from '../Component/OurServices';
 import FeaturedProjectsSection from '../Component/FeaturedProjectsSection';
+import EcommerceFeatures from '../Component/EcommerceFeatures';
+import Technologies from '../Component/Technologies';
+import ClientSuccessStories from '../Component/ClientSuccessStories';
+import FAQ from '../Component/Faqs';
 
 
 const Home = () => {
@@ -19,6 +23,18 @@ const Home = () => {
 
             <div>
                 <FeaturedProjectsSection/>
+            </div>
+            <div>
+                <EcommerceFeatures/>
+            </div>
+            <div>
+                <Technologies/>
+            </div>
+            <div>
+                <ClientSuccessStories/>
+            </div>
+            <div>
+                <FAQ/>
             </div>
 
         
