@@ -47,7 +47,7 @@ const Navbar = () => {
        <img src={logo} alt="Zensoft Logo" className="h-[60px] w-[100px]" />
       </div>
       <div className="navbar-center  gap-3 hidden lg:flex">
-        <ul className="menu text-white  gap-5 menu-horizontal px-1  font-bold">
+        <ul className="menu bg-[#EEF3FF] border border-blue-400 px-10 text-black  gap-5 menu-horizontal py-3 rounded-3xl  font-bold">
           <NavLink to="/">
             Home
           </NavLink>
