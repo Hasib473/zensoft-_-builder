@@ -15,7 +15,7 @@ export default function Footer() {
       ></div>
 
        <div className="relative flex justify-center pt-10">
-        <img className="w-40 relative z-10" src={logoimg} alt=" logo" />
+        <img className="w-30 relative z-10" src={logoimg} alt=" logo" />
       </div>
 
       {/* Overlay */}
@@ -24,7 +24,7 @@ export default function Footer() {
      
 
       {/* Content */}
-<div className="relative max-w-7xl mx-auto px-2 py-10 grid md:grid-cols-3 gap-12 text-center justify-items-center">
+<div className="relative max-w-7xl mx-auto px-2 py-5 grid md:grid-cols-3 gap-12 text-center justify-items-center">
         {/* Location */}
         <div>
           <h3 className="text-lg text-left font-semibold mb-8 text-blue-300">Location</h3>
@@ -33,7 +33,7 @@ export default function Footer() {
           <img
             src={location}
             alt="map"
-            className=" mb-3 w-56"
+            className=" mb-2 w-50"
           />
 
           <div className="flex items-center gap-2 text-sm">
@@ -46,7 +46,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg text-blue-300 text-left font-semibold mb-8">Pages</h3>
 
-          <div className="grid grid-cols-2 space-y-3 gap-2 text-sm text-left">
+          <div className="grid grid-cols-2 space-y-2 gap-2 text-sm text-left">
             <a href="#">Home</a>
             <a href="#">Career</a>
             <a href="#">Services</a>

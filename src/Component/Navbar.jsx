@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../assets/zensoft logo.png"
+import logo from "../assets/zensoft logo.png";
 import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className=" navbar  max-w-7xl mx-auto px-4 shadow-2xl mt-2 absolute z-50 ">
+    <div className=" navbar  max-w-7xl mx-auto shadow-2xl  bg-[#EEF3FF] ">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,28 +37,50 @@ const Navbar = () => {
             <li>
               <a>Portfolio</a>
             </li>
-              <a>About Us</a>
-           
+            <a>About Us</a>
+
             <li>
               <a>Item 3</a>
             </li>
           </ul>
         </div>
-       <img src={logo} alt="Zensoft Logo" className="h-[60px] w-[100px]" />
+        <img src={logo} alt="Zensoft Logo" className="h-[60px] w-[100px]" />
       </div>
-      <div className="navbar-center  gap-3 hidden lg:flex">
-        <ul className="menu bg-[#EEF3FF] border border-blue-400 px-10 text-black  gap-5 menu-horizontal py-3 rounded-3xl  font-bold">
-          <NavLink to="/">
+      <div className="navbar-center gap-3 hidden lg:flex">
+        <ul className="menu bg-[#EEF3FF] border border-blue-400 px-10 text-black gap-5 menu-horizontal py-3 rounded-3xl font-bold">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+          >
             Home
           </NavLink>
-          <NavLink to="/service">
+
+          <NavLink
+            to="/service"
+            className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+          >
             Service
           </NavLink>
-          <NavLink to="/portfolio">
+
+          <NavLink
+            to="/themes"
+            className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+          >
+            Themes
+          </NavLink>
+
+          <NavLink
+            to="/portfolio"
+            className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+          >
             Portfolio
           </NavLink>
-          <NavLink to="/about">
-            About Us 
+
+          <NavLink
+            to="/aboutus"
+            className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+          >
+            About Us
           </NavLink>
         </ul>
       </div>
