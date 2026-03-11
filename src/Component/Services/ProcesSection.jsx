@@ -25,7 +25,7 @@ const ProcessSection = () => {
       <div className="max-w-6xl mx-auto px-6 bg-[#EEF2FF] border border-indigo-200 rounded-lg p-10">
 
         {/* Title */}
-        <h2 className="text-center text-2xl md:text-3xl font-semibold text-gray-700 mb-10">
+        <h2 className="text-center text-2xl md:text-3xl font-bold text-gray-700 mb-10">
           How Zensoft Lab Brings Your Ideas to Life
         </h2>
 

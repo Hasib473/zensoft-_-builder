@@ -64,7 +64,7 @@ const ServicesSection = () => {
     <section className="bg-[#EEF3FF] py-2">
       <div className="max-w-7xl mx-auto px-6">
         
-        <h2 className="text-center text-3xl font-semibold text-gray-800 mt-20 mb-12">
+        <h2 className="text-center text-3xl font-bold text-gray-800 mt-20 mb-12">
           Our Services & Solutions
         </h2>
 

@@ -6,7 +6,7 @@ import img3 from "../assets/fimg3.png";
 const FeaturedProjectsSection = () => {
   return (
     <section className="bg-[#EEF2FF] py-16">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto ">
 
         {/* Header */}
         <div className="mb-10 flex flex-wrap items-center justify-between gap-6 px-6">

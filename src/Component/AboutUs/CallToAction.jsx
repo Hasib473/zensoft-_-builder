@@ -4,7 +4,7 @@ import bgImg from "../../assets/calltoaction.jpg";
 const CallToAction = () => {
   return (
     <section className="relative w-full py-24 bg-[#1e1b5c] overflow-hidden">
-
+      
       {/* Background Image with Opacity */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -12,14 +12,14 @@ const CallToAction = () => {
       ></div>
 
       {/* Content */}
-      <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 items-center gap-16">
+      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-16">
 
         {/* Left Image */}
         <div className="flex justify-center md:justify-start">
           <img
             src={cubeImg}
             alt="cube"
-            className="w-[260px] md:w-[320px] animate-float"
+            className="w-[260px] md:w-[320px] rotate-slow hover:scale-110 transition duration-500"
           />
         </div>
 

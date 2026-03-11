@@ -24,25 +24,65 @@ const Navbar = () => {
               />{" "}
             </svg>
           </div>
-          <ul
-            tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-          >
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Service</a>
-            </li>
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <a>About Us</a>
+        <ul
+  tabIndex="-1"
+  className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+>
+  <li>
+    <NavLink
+      to="/"
+      className={({ isActive }) =>
+        isActive ? "text-blue-600 font-semibold" : ""
+      }
+    >
+      Home
+    </NavLink>
+  </li>
 
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
+  <li>
+    <NavLink
+      to="/service"
+      className={({ isActive }) =>
+        isActive ? "text-blue-600 font-semibold" : ""
+      }
+    >
+      Service
+    </NavLink>
+  </li>
+
+  <li>
+    <NavLink
+      to="/portfolio"
+      className={({ isActive }) =>
+        isActive ? "text-blue-600 font-semibold" : ""
+      }
+    >
+      Portfolio
+    </NavLink>
+  </li>
+
+  <li>
+    <NavLink
+      to="/aboutus"
+      className={({ isActive }) =>
+        isActive ? "text-blue-600 font-semibold" : ""
+      }
+    >
+      About Us
+    </NavLink>
+  </li>
+
+  <li>
+    <NavLink
+      to="/contact"
+      className={({ isActive }) =>
+        isActive ? "text-blue-600 font-semibold" : ""
+      }
+    >
+      Contact
+    </NavLink>
+  </li>
+</ul>
         </div>
         <img src={logo} alt="Zensoft Logo" className="h-[60px] w-[100px]" />
       </div>

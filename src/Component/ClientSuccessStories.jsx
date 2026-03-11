@@ -8,7 +8,7 @@ export default function ClientSuccessStories() {
       <div className="max-w-5xl mx-auto px-4 text-center">
 
         {/* Heading */}
-        <h2 className="text-2xl font-semibold text-gray-800">
+        <h2 className="text-3xl font-bold text-gray-800">
           Client Success Stories
         </h2>
 

@@ -16,7 +16,7 @@ const ThemeProduct = () => {
 
         {/* Title */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-semibold text-gray-800">
+          <h2 className="text-3xl font-bold text-gray-800">
             AmaderShikkha Theme + Plugin
           </h2>
 

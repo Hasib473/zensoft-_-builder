@@ -7,6 +7,7 @@ import EcommerceFeatures from '../Component/EcommerceFeatures';
 import Technologies from '../Component/Technologies';
 import ClientSuccessStories from '../Component/ClientSuccessStories';
 import FAQ from '../Component/Faqs';
+import PopularThemes from '../Component/PopularThemes';
 
 
 const Home = () => {
@@ -23,6 +24,9 @@ const Home = () => {
 
             <div>
                 <FeaturedProjectsSection/>
+            </div>
+            <div>
+                <PopularThemes/>
             </div>
             <div>
                 <EcommerceFeatures/>

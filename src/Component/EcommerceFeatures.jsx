@@ -1,4 +1,5 @@
 import { Database, Truck, ShieldCheck, BarChart3, ClipboardList, Boxes, ShieldAlert, Sparkles } from "lucide-react";
+import { motion } from "framer-motion";
 
 const features = [
   {
@@ -67,26 +68,36 @@ export default function EcommerceFeatures() {
           business from a single, powerful command center.
         </p>
 
-        {/* Cards */}
+        {/* Cards with animation */}
         <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-6 mt-12">
           {features.map((feature, index) => (
-            <div className="bg-white py-6 px-4 rounded-xl border border-gray-200 hover:shadow-md transition">
-  
-  <div className="flex items-start gap-3 mb-3">
-    <div className="w-10 h-10 flex items-center justify-center rounded-md bg-blue-100 text-blue-600">
-      {feature.icon}
-    </div>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.1,
+                type: "spring",
+                stiffness: 120,
+              }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="bg-white py-6 px-4 rounded-xl border border-gray-200 hover:shadow-md transition"
+            >
+              <div className="flex items-start gap-3 mb-3">
+                <div className="w-10 h-10 flex items-center justify-center rounded-md bg-blue-100 text-blue-600">
+                  {feature.icon}
+                </div>
 
-    <h3 className="font-semibold text-gray-800">
-      {feature.title}
-    </h3>
-  </div>
+                <h3 className="font-semibold text-gray-800">
+                  {feature.title}
+                </h3>
+              </div>
 
-  <p className="text-sm text-gray-500 leading-relaxed text-left">
-    {feature.description}
-  </p>
-
-</div>
+              <p className="text-sm text-gray-500 leading-relaxed text-left">
+                {feature.description}
+              </p>
+            </motion.div>
           ))}
         </div>
       </div>

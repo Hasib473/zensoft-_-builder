@@ -23,7 +23,7 @@ export default function Technologies() {
     <section className="bg-gray-200 py-20">
       <div className="max-w-5xl mx-auto text-center">
 
-        <h2 className="text-xl font-semibold text-gray-600 mb-12">
+        <h2 className="text-3xl font-bold text-gray-600 mb-12">
           Technologies
         </h2>
 

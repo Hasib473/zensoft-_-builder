@@ -15,7 +15,7 @@ const ImageStack = () => {
           <img
             src={img}
             alt={`stack-img-${index}`}
-            className="w-full h-full object-cover block"
+            className="max-w-7xl mx-auto h-full object-cover block"
           />
         </div>
       ))}
