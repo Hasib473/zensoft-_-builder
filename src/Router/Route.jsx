@@ -6,6 +6,9 @@ import AboutUs from "../Pages/AboutUs";
 import Themes from "../Pages/Themes";
 import Portfolio from "../Pages/Portfolio";
 import ProjectDetails from "../Component/Portfolio/ProjectDetails";
+import WevDev from "../Pages/WevDev";
+import AppDev from "../Pages/AppDev";
+import ContactSection from "../Pages/ContactSection";
 
 const router = createBrowserRouter([
   {   
@@ -35,7 +38,19 @@ const router = createBrowserRouter([
         {
             path:'/project/:id',
             Component: ProjectDetails
-        }
+        },
+        {
+            path:'/webdev',
+            Component: WevDev
+        },
+            {
+            path:'/appdev',
+            Component:AppDev
+            },
+            {
+                path:'/contact',
+                Component: ContactSection
+            }
     ]
    }
 ]);

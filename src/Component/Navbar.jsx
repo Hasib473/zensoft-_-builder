@@ -124,9 +124,13 @@ const Navbar = () => {
           </NavLink>
         </ul>
       </div>
-      <div className="navbar-end">
+       <div className="navbar-end">
+      <NavLink to="/contact" >
+       
         <a className=" btn btn-primary">Let's Connect</a>
-      </div>
+     
+      </NavLink>
+       </div>
     </div>
   );
 };

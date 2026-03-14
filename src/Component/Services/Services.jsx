@@ -10,52 +10,62 @@ import {
   ShieldCheck,
   Palette,
 } from "lucide-react";
+import { NavLink } from "react-router";
 
 const services = [
   {
     icon: Code,
     title: "Web App Development",
-    desc: "Develop robust online applications to suit your business needs and cater to your clients faithfully.",
+    desc: "Develop robust online applications...",
+    route: "/webDev",
   },
   {
     icon: Smartphone,
     title: "Mobile App Development",
-    desc: "Developing innovative and native mobile apps for Android, iOS platforms.",
+    desc: "Developing innovative and native mobile apps...",
+    route: "/appDev",
   },
   {
     icon: Brain,
     title: "AI & ML",
-    desc: "Expertly crafted AI and ML solutions to transform your organization and drive smart decision-making.",
+    desc: "Expertly crafted AI and ML solutions...",
+    route: "/services/ai-ml",
   },
   {
     icon: ShoppingCart,
     title: "E-commerce",
-    desc: "We provide dynamic e-commerce solutions as well as customization for e-commerce businesses.",
+    desc: "Dynamic e-commerce solutions...",
+    route: "/services/ecommerce",
   },
   {
     icon: GraduationCap,
     title: "E-Learning",
-    desc: "We develop custom Moodle-based platforms to bring your online learning vision to life.",
+    desc: "Custom Moodle-based platforms...",
+    route: "/services/e-learning",
   },
   {
     icon: Database,
     title: "ERP",
-    desc: "Experts in all-in-one management software to streamline every process in your organization.",
+    desc: "All-in-one management software...",
+    route: "/services/erp",
   },
   {
     icon: Cloud,
     title: "Cloud DevOps",
-    desc: "We optimize and automate your cloud infrastructure, ensuring seamless deployment and scalability.",
+    desc: "Optimize and automate your cloud...",
+    route: "/services/devops",
   },
   {
     icon: ShieldCheck,
-    title: "Software Testing as a Service",
-    desc: "Our testing ensures your software is reliable, secure, and performs flawlessly with tailored automation.",
+    title: "Software Testing",
+    desc: "Reliable and secure testing...",
+    route: "/services/software-testing",
   },
   {
     icon: Palette,
     title: "UI/UX and Graphics Design",
-    desc: "Crafting intuitive designs and visuals that enhance user experience and elevate your brand.",
+    desc: "Crafting intuitive designs...",
+    route: "/services/ui-ux",
   },
 ];
 
@@ -91,9 +101,11 @@ const ServicesSection = () => {
                   {service.desc}
                 </p>
 
-                <button className="text-indigo-600 text-sm font-medium hover:underline">
+                <NavLink to={service.route}>
+                  <button className="text-indigo-600 cursor-pointer text-sm font-medium hover:underline">
                   Know More
                 </button>
+                </NavLink>
               </div>
             );
           })}
