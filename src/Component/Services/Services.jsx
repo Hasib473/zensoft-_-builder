@@ -29,13 +29,13 @@ const services = [
     icon: Brain,
     title: "AI & ML",
     desc: "Expertly crafted AI and ML solutions...",
-    route: "/services/ai-ml",
+    route: "/ai",
   },
   {
     icon: ShoppingCart,
     title: "E-commerce",
     desc: "Dynamic e-commerce solutions...",
-    route: "/services/ecommerce",
+    route: "/ecom",
   },
   {
     icon: GraduationCap,

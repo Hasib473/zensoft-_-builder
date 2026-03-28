@@ -9,6 +9,8 @@ import ProjectDetails from "../Component/Portfolio/ProjectDetails";
 import WevDev from "../Pages/WevDev";
 import AppDev from "../Pages/AppDev";
 import ContactSection from "../Pages/ContactSection";
+import Ai from "../Pages/Ai";
+import Ecommerce from "../Pages/Ecommerce";
 
 const router = createBrowserRouter([
   {   
@@ -50,6 +52,14 @@ const router = createBrowserRouter([
             {
                 path:'/contact',
                 Component: ContactSection
+            },
+            {
+                path: '/ai',
+                Component: Ai
+            },
+            {
+                path: '/ecom',
+                Component: Ecommerce
             }
     ]
    }
