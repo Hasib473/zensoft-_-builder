@@ -13,7 +13,7 @@ export const projects = [
     details:
       "AmaderShikkha is a complete training center management platform. It helps institutes manage students, courses, instructors, payments, and attendance in one centralized system.",
     tech: ["React", "Node.js", "MongoDB", "TailwindCSS"],
-    live: "https://example.com"
+    live: "https://amadershikkha.com/"
   },
 
   {
@@ -24,7 +24,7 @@ export const projects = [
     details:
       "Spectrum Nurturing Academy is a modern website designed for an educational and therapy center. It showcases their services, therapy programs, and educational resources for children and families.",
     tech: ["React", "TailwindCSS", "JavaScript", "HTML5"],
-    live: "https://example.com"
+    live: "https://sna-bd.org/"
   },
 
   {
@@ -35,7 +35,7 @@ export const projects = [
     details:
       "Nira's Gallery is an online e-commerce platform for selling handmade crafts and artwork. Customers can browse products, add to cart, and place orders easily.",
     tech: ["React", "Firebase", "Stripe", "TailwindCSS"],
-    live: "https://example.com"
+    live: "https://nirasgallery.com/"
   },
 
   {

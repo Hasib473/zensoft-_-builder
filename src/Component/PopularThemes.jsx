@@ -1,6 +1,7 @@
 import themeImg from "../assets/amader sikkha.jpg";
 import themeImg1 from "../assets/specturm.jpg";
 import themeImg2 from "../assets/juelary.jpg";
+import { useNavigate } from "react-router";
 
 const themes = [
   {
@@ -9,34 +10,34 @@ const themes = [
     image: themeImg,
     oldPrice: "$150",
     price: "$100",
+    link: "https://amadershikkha.com/",
   },
   {
     id: 2,
-    title: "AmaderShikkha Theme",
+    title: "spectrum nurturing academy Theme",
     image: themeImg1,
     oldPrice: "$150",
     price: "$100",
+    link: "https://sna-bd.org/",
   },
   {
     id: 3,
-    title: "AmaderShikkha Theme",
+    title: "Nira's Gallery Theme",
     image: themeImg2,
     oldPrice: "$150",
     price: "$100",
+    link: "https://nirasgallery.com/",
   },
 ];
 
 export default function PopularThemes() {
+  const navigate = useNavigate();
   return (
     <section className="py-16 bg-[#EEF3FF]">
-
       <div className="max-w-7xl mx-auto px-6">
-
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-700">
-            Popular Themes
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-700">Popular Themes</h2>
 
           <button className="text-blue-600 text-sm hover:underline">
             See More
@@ -45,26 +46,20 @@ export default function PopularThemes() {
 
         {/* Grid */}
         <div className="grid md:grid-cols-3 gap-6">
-
           {themes.map((theme) => (
             <div
               key={theme.id}
               className="bg-white rounded-lg border shadow-sm overflow-hidden"
             >
-
               {/* Image */}
               <div className="p-3">
                 <div className="bg-[#2f3242] rounded-md p-2">
-                  <img
-                    src={theme.image}
-                    className="rounded-md w-full"
-                  />
+                  <img src={theme.image} className="rounded-md w-full" />
                 </div>
               </div>
 
               {/* Content */}
               <div className="px-4 pb-4">
-
                 <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">
                   Bestseller
                 </span>
@@ -86,26 +81,25 @@ export default function PopularThemes() {
 
                 {/* Buttons */}
                 <div className="flex gap-3">
-
-                  <button className="flex-1 bg-indigo-500 text-white py-2 rounded-md hover:bg-indigo-600 transition">
+                  <button
+                    onClick={() => window.open(theme.link, "_blank")}
+                    className="flex-1 bg-indigo-500 text-white py-2 rounded-md hover:bg-indigo-600 transition"
+                  >
                     Live Demo
                   </button>
 
-                  <button className="flex-1 border border-blue-400 text-blue-600 py-2 rounded-md hover:bg-blue-500 hover:text-white transition">
+                  <button
+                    onClick={() => navigate(`/project/${theme.id}`)}
+                    className="flex-1 border border-blue-400 text-blue-600 py-2 rounded-md hover:bg-blue-500 hover:text-white transition"
+                  >
                     Details
                   </button>
-
                 </div>
-
               </div>
-
             </div>
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }

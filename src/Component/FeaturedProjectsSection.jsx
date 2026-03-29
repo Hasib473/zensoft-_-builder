@@ -2,12 +2,12 @@ import React from "react";
 import img1 from "../assets/fimg1.png";
 import img2 from "../assets/fimg2.png";
 import img3 from "../assets/fimg3.png";
+import { NavLink } from "react-router";
 
 const FeaturedProjectsSection = () => {
   return (
     <section className="bg-[#EEF2FF] py-16">
       <div className="max-w-7xl mx-auto ">
-
         {/* Header */}
         <div className="mb-10 flex flex-wrap items-center justify-between gap-6 px-6">
           <h2 className="text-3xl font-bold text-slate-900">
@@ -24,49 +24,76 @@ const FeaturedProjectsSection = () => {
           </div>
 
           <div className="flex flex-wrap items-center gap-8 text-sm font-medium">
-            <button className="text-indigo-600 border-b-2 border-indigo-600 pb-1">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-indigo-600 border-b-2 border-indigo-600 pb-1"
+                  : "text-slate-500 hover:text-slate-800"
+              }
+            >
               New
-            </button>
-            <button className="text-slate-500 hover:text-slate-800">
+            </NavLink>
+
+            <NavLink
+              to="/webdev"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-indigo-600 border-b-2 border-indigo-600 pb-1"
+                  : "text-slate-500 hover:text-slate-800"
+              }
+            >
               Web
-            </button>
-            <button className="text-slate-500 hover:text-slate-800">
+            </NavLink>
+
+            <NavLink
+              to="/appdev"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-indigo-600 border-b-2 border-indigo-600 pb-1"
+                  : "text-slate-500 hover:text-slate-800"
+              }
+            >
               Mobile
-            </button>
-            <button className="text-slate-500 hover:text-slate-800">
+            </NavLink>
+
+            <NavLink
+              to="/themes"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-indigo-600 border-b-2 border-indigo-600 pb-1"
+                  : "text-slate-500 hover:text-slate-800"
+              }
+            >
               Themes
-            </button>
+            </NavLink>
           </div>
         </div>
 
         {/* Card */}
         <div className="px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden rounded-xl shadow-lg">
-
             {/* Left Images */}
             <div className="bg-slate-900 p-3">
               <img
                 src={img1}
                 alt="Preview"
-                className="h-[180px] w-full object-cover  "
+                className="h-[180px] w-full object-cover"
               />
-
               <img
                 src={img2}
                 alt="Preview"
-                className="h-[180px] w-full object-cover "
+                className="h-[180px] w-full object-cover"
               />
-
               <img
                 src={img3}
                 alt="Preview"
-                className="h-[180px] w-full object-cover "
+                className="h-[180px] w-full object-cover"
               />
             </div>
 
             {/* Right Content */}
             <div className="flex flex-col justify-between bg-white p-8">
-
               <div>
                 <h3 className="mb-1 text-2xl font-semibold text-slate-900">
                   AmaderShikkha
@@ -107,14 +134,18 @@ const FeaturedProjectsSection = () => {
                   ))}
                 </div>
               </div>
-
+ 
               {/* Button */}
               <div className="mt-10">
-                <button className="rounded-lg cursor-pointer bg-indigo-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-indigo-700 hover:shadow-md">
+                <button
+                  onClick={() =>
+                    window.open("https://demo1.amadershikkha.com/", "_blank")
+                  }
+                  className="rounded-lg cursor-pointer bg-indigo-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-indigo-700 hover:shadow-md"
+                >
                   View Live Demo
                 </button>
               </div>
-
             </div>
           </div>
         </div>
@@ -125,7 +156,6 @@ const FeaturedProjectsSection = () => {
           <span className="h-2 w-6 rounded-full bg-indigo-600" />
           <span className="h-2 w-2 rounded-full bg-indigo-200" />
         </div>
-
       </div>
     </section>
   );

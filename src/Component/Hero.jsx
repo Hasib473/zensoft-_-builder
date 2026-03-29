@@ -3,8 +3,11 @@ import img2 from "../assets/191dd62a0da18955d808a8a8c771a3b6cd219d03.jpg";
 import { MousePointerClick } from "lucide-react";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
+import { useNavigate } from "react-router";
 
 export default function Hero() {
+    const navigate = useNavigate();
+
   return (
     <section className="relative w-full min-h-screen flex items-center overflow-hidden bg-[#0f172a]">
 
@@ -43,12 +46,13 @@ export default function Hero() {
             </h1>
 
             <motion.button
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-              className="mt-6 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 transition-all duration-300 rounded-lg font-medium shadow-lg shadow-indigo-900/30"
-            >
-              Explore Our Services
-            </motion.button>
+      whileHover={{ scale: 1.08 }}
+      whileTap={{ scale: 0.95 }}
+      onClick={() => navigate("/service")}
+      className="mt-6 px-6 py-3 cursor-pointer bg-indigo-600 hover:bg-indigo-500 transition-all duration-300 rounded-lg font-medium shadow-lg shadow-indigo-900/30"
+    >
+      Explore Our Services
+    </motion.button>
 
           </motion.div>
 

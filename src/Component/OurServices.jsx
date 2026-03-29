@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router";
 
 export default function OurServices() {
 
@@ -21,6 +22,8 @@ export default function OurServices() {
       transition: { duration: 0.5 }
     }
   };
+
+  const navigate = useNavigate();
 
   return (
     <section className="bg-[#EEF2FF] py-15 overflow-hidden">
@@ -49,114 +52,123 @@ export default function OurServices() {
         </motion.div>
 
         {/* RIGHT SIDE */}
-        <div className="relative h-[500px] flex items-center justify-center">
+      <div className="relative h-[500px] flex items-center justify-center">
 
-          {/* Bottom Shadow */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            className="absolute bottom-6 w-[380px] h-10 bg-gray-300/40 rounded-full blur-md"
-          />
+      {/* Bottom Shadow */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6 }}
+        className="absolute bottom-6 w-[380px] h-10 bg-gray-300/40 rounded-full blur-md"
+      />
 
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="relative w-[420px] h-[420px]"
-          >
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="relative w-[420px] h-[420px]"
+      >
 
-            {/* E-commerce */}
-            <motion.div
-              variants={card}
-              whileHover={{ y: -6, scale: 1.05 }}
-              className="absolute top-13 left-24 bg-[#dfe8ff] border border-blue-400 text-blue-600 px-6 py-2 rounded-md rotate-[-6deg]"
-            >
-              E-commerce
-            </motion.div>
+        {/* E-commerce */}
+        <motion.div
+          variants={card}
+          whileHover={{ y: -6, scale: 1.05 }}
+          onClick={() => navigate("/ecom")}
+          className="absolute top-13 left-24 cursor-pointer bg-[#dfe8ff] border border-blue-400 text-blue-600 px-6 py-2 rounded-md rotate-[-6deg]"
+        >
+          E-commerce
+        </motion.div>
 
-            {/* Web App */}
-            <motion.div
-              variants={card}
-              whileHover={{ y: -6, scale: 1.05 }}
-              className="absolute top-22.5 left-16 bg-indigo-600 text-white px-8 py-3 rounded-md rotate-[-7deg] shadow-lg"
-            >
-              Web App Development
-            </motion.div>
+        {/* Web App */}
+        <motion.div
+          variants={card}
+          whileHover={{ y: -6, scale: 1.05 }}
+          onClick={() => navigate("/webdev")}
+          className="absolute top-22.5 left-16 cursor-pointer bg-indigo-600 text-white px-8 py-3 rounded-md rotate-[-7deg] shadow-lg"
+        >
+          Web App Development
+        </motion.div>
 
-            {/* Small circle */}
-            <motion.div
-              animate={{ scale: [1, 1.4, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="absolute top-34 left-48 w-4 h-4 bg-blue-300 rounded-full"
-            />
+        {/* Small circle */}
+        <motion.div
+          animate={{ scale: [1, 1.4, 1] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="absolute top-34 left-48 w-4 h-4 bg-blue-300 rounded-full"
+        />
 
-            {/* Cloud */}
-            <motion.div
-              variants={card}
-              whileHover={{ y: -6, scale: 1.05 }}
-              className="absolute top-38 left-20 bg-[#dfe8ff] border border-blue-300 text-blue-600 px-10 py-3 rounded-md"
-            >
-              Cloud DevOps
-            </motion.div>
+        {/* Cloud */}
+        <motion.div
+          variants={card}
+          whileHover={{ y: -6, scale: 1.05 }}
+          onClick={() => navigate("/service")}
+          className="absolute top-38 left-20 cursor-pointer bg-[#dfe8ff] border border-blue-300 text-blue-600 px-10 py-3 rounded-md"
+        >
+          Cloud DevOps
+        </motion.div>
 
-            {/* Mobile */}
-            <motion.div
-              variants={card}
-              whileHover={{ y: -6, scale: 1.05 }}
-              className="absolute top-50 left-8 bg-red-500 text-white px-10 py-3 rounded-md shadow-lg"
-            >
-              Mobile App Development
-            </motion.div>
+        {/* Mobile */}
+        <motion.div
+          variants={card}
+          whileHover={{ y: -6, scale: 1.05 }}
+          onClick={() => navigate("/appdev")}
+          className="absolute top-50 left-8 cursor-pointer bg-red-500 text-white px-10 py-3 rounded-md shadow-lg"
+        >
+          Mobile App Development
+        </motion.div>
 
-            {/* Testing */}
-            <motion.div
-              variants={card}
-              whileHover={{ y: -6, scale: 1.05 }}
-              className="absolute top-63 left-25 bg-[#dfe8ff] border border-blue-300 text-blue-600 px-7 py-3 rounded-md"
-            >
-              Software Testing
-            </motion.div>
+        {/* Testing */}
+        <motion.div
+          variants={card}
+          whileHover={{ y: -6, scale: 1.05 }}
+          onClick={() => navigate("/service")}
+          className="absolute top-63 left-25 cursor-pointer bg-[#dfe8ff] border border-blue-300 text-blue-600 px-7 py-3 rounded-md"
+        >
+          Software Testing
+        </motion.div>
 
-            {/* AI */}
-            <motion.div
-              variants={card}
-              whileHover={{ y: -6, scale: 1.05 }}
-              className="absolute top-76 left-20 bg-[#dfe8ff] border border-blue-300 text-blue-600 px-8 py-3 rounded-md"
-            >
-              AI & ML
-            </motion.div>
+        {/* AI */}
+        <motion.div
+          variants={card}
+          whileHover={{ y: -6, scale: 1.05 }}
+          onClick={() => navigate("/ai")}
+          className="absolute top-76 left-20 cursor-pointer bg-[#dfe8ff] border border-blue-300 text-blue-600 px-8 py-3 rounded-md"
+        >
+          AI & ML
+        </motion.div>
 
-            {/* ERP */}
-            <motion.div
-              variants={card}
-              whileHover={{ y: -6, scale: 1.05 }}
-              className="absolute top-76 left-55 bg-[#dfe8ff] border border-blue-300 text-blue-600 px-8 py-3 rounded-md"
-            >
-              ERP
-            </motion.div>
+        {/* ERP */}
+        <motion.div
+          variants={card}
+          whileHover={{ y: -6, scale: 1.05 }}
+          onClick={() => navigate("/service")}
+          className="absolute top-76 left-55 cursor-pointer bg-[#dfe8ff] border border-blue-300 text-blue-600 px-8 py-3 rounded-md"
+        >
+          ERP
+        </motion.div>
 
-            {/* UI UX */}
-            <motion.div
-              variants={card}
-              whileHover={{ y: -6, scale: 1.05 }}
-              className="absolute bottom-5 left-24 bg-gray-800 text-white px-8 py-3 rounded-md shadow-lg"
-            >
-              UI/UX and Graphics Design
-            </motion.div>
+        {/* UI UX */}
+        <motion.div
+          variants={card}
+          whileHover={{ y: -6, scale: 1.05 }}
+          onClick={() => navigate("/service")}
+          className="absolute bottom-5 left-24 cursor-pointer bg-gray-800 text-white px-8 py-3 rounded-md shadow-lg"
+        >
+          UI/UX and Graphics Design
+        </motion.div>
 
-            {/* E-Learning */}
-            <motion.div
-              variants={card}
-              whileHover={{ y: -6, scale: 1.05 }}
-              className="absolute top-78 left-73 bg-[#dfe8ff] border border-blue-300 text-blue-600 px-10 py-3 w-48 rounded-md rotate-40"
-            >
-              E-Learning
-            </motion.div>
+        {/* E-Learning */}
+        <motion.div
+          variants={card}
+          whileHover={{ y: -6, scale: 1.05 }}
+          onClick={() => navigate("/service")}
+          className="absolute top-78 left-73 cursor-pointer bg-[#dfe8ff] border border-blue-300 text-blue-600 px-10 py-3 w-48 rounded-md rotate-40"
+        >
+          E-Learning
+        </motion.div>
 
-          </motion.div>
-        </div>
+      </motion.div>
+    </div>
 
       </div>
     </section>
