@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AboutSection from "../Component/AboutUs/AboutSection";
 import LeadershipTeam from "../Component/AboutUs/LeaderShipTeam";
 import CallToAction from "../Component/AboutUs/CallToAction";
-import { FadeLoader } from "react-spinners";
+import { FadeLoader, ScaleLoader } from "react-spinners";
 
 const AboutUs = () => {
   const [loading, setLoading] = useState(true);
@@ -10,7 +10,7 @@ const AboutUs = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -18,7 +18,7 @@ const AboutUs = () => {
   if (loading) {
     return (
       <div className="h-screen flex items-center justify-center bg-white">
-         <FadeLoader />
+         <ScaleLoader />
       </div>
     );
   }

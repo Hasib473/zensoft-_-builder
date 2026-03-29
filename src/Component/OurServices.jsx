@@ -101,7 +101,7 @@ export default function OurServices() {
         <motion.div
           variants={card}
           whileHover={{ y: -6, scale: 1.05 }}
-          onClick={() => navigate("/service")}
+          onClick={() => navigate("/cloud")}
           className="absolute top-38 left-20 cursor-pointer bg-[#dfe8ff] border border-blue-300 text-blue-600 px-10 py-3 rounded-md"
         >
           Cloud DevOps
@@ -121,7 +121,7 @@ export default function OurServices() {
         <motion.div
           variants={card}
           whileHover={{ y: -6, scale: 1.05 }}
-          onClick={() => navigate("/service")}
+          onClick={() => navigate("/stesting")}
           className="absolute top-63 left-25 cursor-pointer bg-[#dfe8ff] border border-blue-300 text-blue-600 px-7 py-3 rounded-md"
         >
           Software Testing
@@ -151,7 +151,7 @@ export default function OurServices() {
         <motion.div
           variants={card}
           whileHover={{ y: -6, scale: 1.05 }}
-          onClick={() => navigate("/service")}
+          onClick={() => navigate("/uiux")}
           className="absolute bottom-5 left-24 cursor-pointer bg-gray-800 text-white px-8 py-3 rounded-md shadow-lg"
         >
           UI/UX and Graphics Design

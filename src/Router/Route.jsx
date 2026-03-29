@@ -11,6 +11,11 @@ import AppDev from "../Pages/AppDev";
 import ContactSection from "../Pages/ContactSection";
 import Ai from "../Pages/Ai";
 import Ecommerce from "../Pages/Ecommerce";
+import Cloude from "../Pages/Cloude";
+import Ui from "../Pages/Ui";
+import Stesting from "../Pages/Stesting";
+import Erp from "../Pages/Erp";
+import Elearning from "../Pages/Elearning";
 
 const router = createBrowserRouter([
   {   
@@ -60,6 +65,26 @@ const router = createBrowserRouter([
             {
                 path: '/ecom',
                 Component: Ecommerce
+            },
+            {
+                path:'/cloud',
+                Component: Cloude
+            },
+            {
+                path:'/uiux',
+                Component:Ui
+            },
+            {
+                path:'/stesting',
+                Component: Stesting
+            },
+            {
+                path:'/erp',
+                Component: Erp
+            },
+            {
+                path:'/elearning',
+                Component: Elearning
             }
     ]
    }

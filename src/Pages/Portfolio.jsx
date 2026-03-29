@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PortfolioComponent from "../Component/Portfolio/PortfolioComponent";
-import { FadeLoader } from "react-spinners";
+import { FadeLoader, ScaleLoader } from "react-spinners";
 
 const Portfolio = () => {
 
@@ -9,7 +9,7 @@ const Portfolio = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -17,7 +17,7 @@ const Portfolio = () => {
   if (loading) {
     return (
       <div className="h-screen flex items-center justify-center bg-white">
-        <FadeLoader/>
+        <ScaleLoader />
       </div>
     );
   }

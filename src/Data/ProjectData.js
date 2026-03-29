@@ -42,11 +42,11 @@ export const projects = [
     id: "pathon",
     title: "Pathon",
     description: "Education / LMS Mobile App",
-    image: pathonImg,
+    image: imcImg,
     details:
       "Pathon is a learning management system mobile app designed to help students access courses, watch lectures, and track their learning progress from their smartphones.",
     tech: ["Flutter", "Firebase", "REST API"],
-    live: "https://example.com"
+    live: "https://pathon.app/"
   },
 
   {
@@ -57,17 +57,17 @@ export const projects = [
     details:
       "GIMS is a university internship management platform developed for Green University. It allows students to apply for internships, track progress, and enables faculty members to manage internship programs.",
     tech: ["React", "Django", "PostgreSQL", "REST API"],
-    live: "https://example.com"
+    live: "https://gims.greenuniversity.top/"
   },
 
   {
     id: "imc",
     title: "IMC Solution",
     description: "Trading & Project Consultancy Website",
-    image: imcImg,
+    image:pathonImg ,
     details:
       "ZenSoft Lab designed and developed the corporate website for IMC Solution, a Bangladesh-based trading and project consultancy company specializing in food, pharmaceutical, and technology sectors. The website highlights their global resources and industry expertise.",
     tech: ["Django", "RESTful API", "JavaScript", "HTML5", "CSS3"],
-    live: "https://example.com"
+    live: "https://imc-solution.com/"
   }
 ];

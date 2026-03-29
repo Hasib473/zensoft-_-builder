@@ -41,31 +41,31 @@ const services = [
     icon: GraduationCap,
     title: "E-Learning",
     desc: "Custom Moodle-based platforms...",
-    route: "/services/e-learning",
+    route: "/elearning",
   },
   {
     icon: Database,
     title: "ERP",
     desc: "All-in-one management software...",
-    route: "/services/erp",
+    route: "/erp",
   },
   {
     icon: Cloud,
     title: "Cloud DevOps",
     desc: "Optimize and automate your cloud...",
-    route: "/services/devops",
+    route: "/cloud",
   },
   {
     icon: ShieldCheck,
     title: "Software Testing",
     desc: "Reliable and secure testing...",
-    route: "/services/software-testing",
+    route: "/stesting",
   },
   {
     icon: Palette,
     title: "UI/UX and Graphics Design",
     desc: "Crafting intuitive designs...",
-    route: "/services/ui-ux",
+    route: "/uiux",
   },
 ];
 

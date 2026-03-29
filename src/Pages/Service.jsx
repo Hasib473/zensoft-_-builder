@@ -5,7 +5,7 @@ import ProcessSection from "../Component/Services/ProcesSection";
 import FeaturesSection from "../Component/Services/FeatureSection";
 import Technologies from "../Component/Services/Technologies";
 import PopularThemes from "../Component/PopularThemes";
-import { FadeLoader } from "react-spinners";
+import { FadeLoader, ScaleLoader } from "react-spinners";
 
 const Service = () => {
 
@@ -14,7 +14,7 @@ const Service = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,7 +22,7 @@ const Service = () => {
   if (loading) {
     return (
       <div className="h-screen flex items-center justify-center bg-white">
-        <FadeLoader />
+        <ScaleLoader />
       </div>
     );
   }
