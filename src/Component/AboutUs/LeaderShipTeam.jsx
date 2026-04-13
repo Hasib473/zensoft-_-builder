@@ -53,6 +53,11 @@ export default function LeadershipTeam() {
           >
             <img
               src={suvoimg}
+              alt="Mehdi Hasan Shuvo - Cofounder"
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="500"
               className="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-700/80"></div>
@@ -74,6 +79,11 @@ export default function LeadershipTeam() {
           >
             <img
               src={zahidimg}
+              alt="Md. Zahidul Hasan - Cofounder"
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="500"
               className="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-700/80"></div>
@@ -95,6 +105,11 @@ export default function LeadershipTeam() {
           >
             <img
               src={rafatulimg}
+              alt="Rafatul Islam - Cofounder"
+              loading="lazy"
+              decoding="async"
+              width="400"
+              height="500"
               className="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-700/80"></div>

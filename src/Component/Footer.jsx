@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import bgimg from '../assets/191dd62a0da18955d808a8a8c771a3b6cd219d03.jpg'
 import location from '../assets/location.png'
-import logoimg from '../assets/zensoft logo.png'
+import logoimg from '../assets/Logo Without BGN.png'
 
 export default function Footer() {
   return (
